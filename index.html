@@ -9,41 +9,71 @@
 <body>
   <!-- الهيدر -->
   <header>
-    <h1 class="logo">Art Squad</h1>
-    <p class="tagline">معاً نصنع الإبداع</p>
+    <h1 class="logo">ART SQUAD</h1>
+    <nav>
+      <ul>
+        <li><a href="#ads">الإعلانات</a></li>
+        <li><a href="#about">عنّا</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <button id="modeToggle">🌙</button>
   </header>
 
-  <!-- بانر / صورة رئيسية -->
-  <section class="hero">
-    <img src="images/banner.jpg" alt="Art Squad Banner">
-  </section>
-
-  <!-- الإعلانات -->
-  <section class="ads">
+  <!-- قسم الاعلانات -->
+  <section id="ads">
     <h2>إعلانات الشركات</h2>
 
-    <div class="ad-card">
-      <img src="images/company1.jpg" alt="شركة 1">
-      <h3>شركة التقنية الحديثة</h3>
-      <p>شركة رائدة في تقديم الحلول التقنية المتطورة في مجالات الذكاء الاصطناعي والتطبيقات.</p>
+    <div class="ad">
+      <img src="https://via.placeholder.com/600x300" alt="شركة 1">
+      <h3>شركة Alpha</h3>
+      <p>شركة متخصصة في الحلول التقنية وخدمات الذكاء الاصطناعي.</p>
     </div>
 
-    <div class="ad-card">
-      <img src="images/company2.jpg" alt="شركة 2">
-      <h3>شركة الأمل للتسويق</h3>
-      <p>متخصصة في التسويق الرقمي وإدارة الحملات الإعلانية على شبكات التواصل الاجتماعي.</p>
+    <div class="ad">
+      <img src="https://via.placeholder.com/600x300" alt="شركة 2">
+      <h3>شركة Beta</h3>
+      <p>شركة تصميم داخلي وديكور مع لمسات عصرية.</p>
     </div>
 
-    <div class="ad-card">
-      <img src="images/company3.jpg" alt="شركة 3">
-      <h3>شركة البناء والتطوير</h3>
-      <p>خبرة طويلة في تصميم المباني وتنفيذ مشاريع عمرانية كبرى بجودة عالية.</p>
+    <div class="ad">
+      <img src="https://via.placeholder.com/600x300" alt="شركة 3">
+      <h3>شركة Gamma</h3>
+      <p>تطوير تطبيقات موبايل ومواقع ويب سريعة وآمنة.</p>
     </div>
   </section>
 
-  <!-- الفوتر -->
+  <!-- قسم عنّا -->
+  <section id="about">
+    <h2>عن Art Squad</h2>
+    <p>
+      نحن فريق إبداعي نركز على الفن، التصميم، والتكنولوجيا.  
+      هدفنا توفير محتوى إبداعي يخدم الشركات والأفراد.
+    </p>
+  </section>
+
+  <!-- تواصل معنا -->
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <form>
+      <input type="text" placeholder="اسمك">
+      <input type="email" placeholder="بريدك الإلكتروني">
+      <textarea placeholder="رسالتك"></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
   <footer>
-    <p>© 2025 Art Squad. جميع الحقوق محفوظة.</p>
+    <p>© 2025 جميع الحقوق محفوظة لـ Art Squad</p>
   </footer>
+
+  <script>
+    // تغيير المظهر
+    const toggleBtn = document.getElementById("modeToggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggleBtn.textContent = document.body.classList.contains("dark") ? "☀" : "🌙";
+    });
+  </script>
 </body>
 </html>

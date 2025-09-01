@@ -1,71 +1,123 @@
-/* الخلفية العامة */
-body {
+/* Reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #00c6ff, #7d2cff);
-  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* المظهر النهاري */
+body {
+  background: linear-gradient(to bottom right, #00c6ff, #0072ff);
+  color: #222;
   line-height: 1.6;
 }
 
 /* الهيدر */
 header {
-  text-align: center;
-  padding: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
 }
+
 .logo {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: bold;
-  color: #fff;
+  color: white;
 }
-.tagline {
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#modeToggle {
+  background: none;
+  border: none;
   font-size: 20px;
-  color: #ddd;
+  cursor: pointer;
 }
 
-/* البانر */
-.hero img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-}
-
-/* الإعلانات */
-.ads {
-  padding: 40px 20px;
+/* الاقسام */
+section {
+  padding: 60px 20px;
   text-align: center;
 }
-.ads h2 {
-  font-size: 32px;
+
+h2 {
+  font-size: 28px;
   margin-bottom: 20px;
 }
-.ad-card {
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
+
+/* الاعلانات */
+.ad {
   margin: 20px auto;
+  max-width: 700px;
+  background: white;
+  padding: 20px;
   border-radius: 12px;
-  max-width: 600px;
-  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-.ad-card img {
+
+.ad img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* تواصل معنا */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border: none;
   border-radius: 8px;
 }
-.ad-card h3 {
-  margin: 15px 0 10px;
-  font-size: 24px;
-}
-.ad-card p {
-  font-size: 16px;
-  color: #eee;
+
+button {
+  background: #0072ff;
+  color: white;
+  cursor: pointer;
 }
 
 /* الفوتر */
 footer {
+  background: rgba(0,0,0,0.2);
   text-align: center;
   padding: 20px;
-  background: rgba(0,0,0,0.4);
-  margin-top: 40px;
+  margin-top: 30px;
+  color: white;
+}
+
+/* المظهر الليلي */
+body.dark {
+  background: linear-gradient(to bottom right, #1a1a2e, #6a0dad);
+  color: #eee;
+}
+
+body.dark header, 
+body.dark footer {
+  background: rgba(0,0,0,0.5);
+}
+
+body.dark .ad {
+  background: #2c2c54;
+  color: #eee;
 }
