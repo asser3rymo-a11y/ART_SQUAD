@@ -1,0 +1,71 @@
+/* الخلفية العامة */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #00c6ff, #7d2cff);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* الهيدر */
+header {
+  text-align: center;
+  padding: 40px;
+}
+.logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+.tagline {
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* البانر */
+.hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* الإعلانات */
+.ads {
+  padding: 40px 20px;
+  text-align: center;
+}
+.ads h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.ad-card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
+}
+.ad-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.ad-card h3 {
+  margin: 15px 0 10px;
+  font-size: 24px;
+}
+.ad-card p {
+  font-size: 16px;
+  color: #eee;
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 40px;
+}
